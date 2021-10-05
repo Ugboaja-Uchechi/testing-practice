@@ -9,11 +9,63 @@ const stringLength = (string) => {
 };
 module.exports = stringLength;
 
-stringLength('hi');
-stringLength('hey');
-stringLength('hello');
+const reversedString = (string) => {
+  return string.split('').reverse().join('');
+}
+module.exports = reversedString;
 
-// function sum(a, b) {
-//   return a + b;
+const capitalisedString = (string) => {
+  console.log(string.charAt(0).toUpperCase() + string.slice(1));
+}
+module.exports = capitalisedString;
+
+// class Calculator {
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+
+//   // Getter
+//   get area() {
+//     return this.calcArea();
+//   }
+
+//   // Method
+//   calcArea() {
+//     return this.height * this.width;
+//   }
+
+//   get addition() {
+//     return this.calcAddition();
+//   }
+
+//   calcAddition() {
+//     return this.height + this.width;
+//   }
+
+//   get subtraction() {
+//     return this.calcAddition();
+//   }
+
+//   calcSubtraction() {
+//     return this.height + this.width;
+//   }
+
+//   get multiplication() {
+//     return this.calcAddition();
+//   }
+
+//   calcMultiplication() {
+//     return this.height + this.width;
+//   }
+
+//   get division() {
+//     return this.calcAddition();
+//   }
+
+//   calcDivision() {
+//     return this.height + this.width;
+//   }
 // }
-// module.exports = sum;
+// const square = new Rectangle;
+// return square;
