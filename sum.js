@@ -1,8 +1,12 @@
 
 const stringLength = (string) => {
-  return string.length;
   // console.log(string.charAt(0));
-}
+  if(string.length === 1 || string.length <= 10) {
+  return 'error';
+} else {
+  return string.length;
+  }
+};
 module.exports = stringLength;
 
 stringLength('hi');
